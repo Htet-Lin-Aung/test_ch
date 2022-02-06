@@ -10,8 +10,7 @@ class Mpt
     
     protected $monthlyFees = 200;
     
-    public function setMonth(int $month)
-    {
+    function __construct(int $month) {
         $this->month = $month;
     }
     

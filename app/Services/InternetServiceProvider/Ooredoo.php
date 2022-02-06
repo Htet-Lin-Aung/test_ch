@@ -10,7 +10,7 @@ class Ooredoo extends Mpt
     
     protected $monthlyFees = 150;
     
-    public function setMonth(int $month)
+    public function  __construct(int $month)
     {
         $this->month = $month;
     }

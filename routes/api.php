@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('login', [LoginController::class, 'login']);
 
-Route::middleware('auth:sanctum')->group(function () {
+// Route::middleware('auth:sanctum')->group(function () {
     
     Route::get('posts', [PostController::class, 'list']);
     Route::post('posts/reaction', [PostController::class, 'toggleReaction']);
@@ -31,4 +31,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('job/apply', [JobController::class, 'apply']);
     
     Route::post('staff/salary', [StaffController::class, 'payroll']);
-});
+// });
